@@ -1,9 +1,4 @@
-
-   ## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 10 minutes"
-ExpiresByType text/javascript "access 10 minutes"
-ExpiresByType text/css "access 10 minutes"
-</IfModule>
-## EXPIRES CACHING ##
+# cache images and flash content for one month
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|css|js)$">
+Header set Cache-Control "max-age=600"
+</FilesMatch>
