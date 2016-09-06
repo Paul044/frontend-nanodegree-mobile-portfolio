@@ -2,3 +2,8 @@
 <FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|css|js)$">
 Header set Cache-Control "max-age=600"
 </FilesMatch>
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
