@@ -5,6 +5,5 @@ ExpiresActive On
 ExpiresByType image/jpg "access 10 minutes"
 ExpiresByType text/javascript "access 10 minutes"
 ExpiresByType text/css "access 10 minutes"
-E
 </IfModule>
 ## EXPIRES CACHING ##
